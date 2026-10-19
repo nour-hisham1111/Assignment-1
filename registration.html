@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Register | Campus Events Guide</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <input type="checkbox" id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+  <div class="page">
+    <header class="site-header">
+      <div class="container header-bar">
+        <a class="brand" href="index.html">Campus Events Guide</a>
+        <nav class="main-nav" aria-label="Main navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="event-details.html">Event Details</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="registration.html" aria-current="page">Register</a></li>
+          </ul>
+        </nav>
+        <label class="toggle-label" for="theme-toggle">Dark mode</label>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <h1>Register for Tech Innovation Fest 2026</h1>
+        <p class="notice"><strong>Event:</strong> Tech Innovation Fest 2026 &nbsp;|&nbsp; <strong>Date:</strong> 15
+          November 2026, 10:00 AM - 4:00 PM &nbsp;|&nbsp; <a href="event-details.html">Back to details</a></p>
+        <form action="#" method="post" enctype="multipart/form-data">
+          <fieldset>
+            <legend>About you</legend>
+            <div class="form-grid">
+              <div class="field">
+                <label for="name">Attendee name</label>
+                <input type="text" id="name" name="name" required maxlength="50" pattern="[A-Za-z\u0600-\u06FF ]{3,50}"
+                  placeholder="Sara Ahmed" title="3 to 50 letters">
+              </div>
+              <div class="field">
+                <label for="email">University email</label>
+                <input type="email" id="email" name="email" required placeholder="you@example.com">
+              </div>
+              <div class="field">
+                <label for="id">Student ID</label>
+                <input type="text" id="id" name="studentid" required pattern="[0-9]{8}" maxlength="8"
+                  inputmode="numeric" placeholder="20261234" title="8 digits">
+              </div>
+              <div class="field">
+                <label for="site">Portfolio or LinkedIn link</label>
+                <input type="url" id="site" name="site" placeholder="https://example.com">
+              </div>
+              <div class="field">
+                <label for="guests">Number of guests (0 to 3)</label>
+                <input type="number" id="guests" name="guests" min="0" max="3" value="0">
+              </div>
+              <div class="field">
+                <label for="idcard">Upload student ID photo</label>
+                <input type="file" id="idcard" name="idcard" accept="image/*,.pdf" required>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Your visit</legend>
+            <div class="form-grid">
+              <div class="field">
+                <label for="arrival-date">Arrival date</label>
+                <input type="date" id="arrival-date" name="arrival_date" value="2026-11-15" min="2026-11-15"
+                  max="2026-11-15" required>
+              </div>
+              <div class="field">
+                <label for="arrival-time">Arrival time</label>
+                <input type="time" id="arrival-time" name="arrival_time" min="10:00" max="16:00" value="10:00" required>
+              </div>
+              <div class="field">
+                <label for="session">Event choice (workshop)</label>
+                <select id="session" name="session" required>
+                  <option value="">Choose a session</option>
+                  <option>Keynote: building useful interfaces</option>
+                  <option>Robotics workshop</option>
+                  <option>Student showcase</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="interest">Interest in AI topics (1 to 10)</label>
+                <input type="range" id="interest" name="interest" min="1" max="10" value="5">
+              </div>
+              <div class="field">
+                <label for="badge">Name badge color</label>
+                <input type="color" id="badge" name="badge" value="#0f766e">
+              </div>
+              <fieldset class="field">
+                <legend>Attendance type</legend>
+                <label class="choice"><input type="radio" name="type" value="in-person" checked> In person</label>
+                <label class="choice"><input type="radio" name="type" value="volunteer"> Volunteer</label>
+              </fieldset>
+              <fieldset class="field wide">
+                <legend>Access needs</legend>
+                <label class="choice"><input type="checkbox" name="access" value="wheelchair"> Wheelchair access</label>
+                <label class="choice"><input type="checkbox" name="access" value="sign"> Sign language
+                  interpreter</label>
+                <label class="choice"><input type="checkbox" name="access" value="quiet"> Quiet seating</label>
+              </fieldset>
+              <div class="field wide">
+                <label for="notes">Other access needs or questions</label>
+                <textarea id="notes" name="notes" rows="4" maxlength="300"
+                  placeholder="Tell us how we can help"></textarea>
+                <span class="hint">Maximum 300 characters.</span>
+              </div>
+            </div>
+          </fieldset>
+          <label class="choice"><input type="checkbox" name="agree" required> I will bring my student ID card to the
+            event.</label>
+          <br>
+          <button class="btn" type="submit">Confirm registration</button>
+        </form>
+        <section class="panel" aria-labelledby="contact-heading">
+          <h2 id="contact-heading">Event contact</h2>
+          <ul class="event-meta">
+            <li><strong>Organizer:</strong> Student Activities Office</li>
+            <li><strong>Email:</strong> <a href="mailto:events@campus.example">events@campus.example</a></li>
+            <li><strong>Phone:</strong> +20 2 5555 0123</li>
+            <li><strong>Office:</strong> Building B, Room 104</li>
+          </ul>
+        </section>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-bar">
+        <p>&copy; 2026 Campus Events Guide. University of Science and Technology.</p>
+        <ul class="social-links" aria-label="Social links">
+          <li><a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a></li>
+          <li><a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://github.com/yourusername/campus_events_yourname" target="_blank" rel="noopener">GitHub
+              repo</a></li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>

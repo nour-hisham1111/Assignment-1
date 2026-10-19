@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Events | Campus Events Guide</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <input type="checkbox" id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+  <div class="page">
+    <header class="site-header">
+      <div class="container header-bar">
+        <a class="brand" href="index.html">Campus Events Guide</a>
+        <nav class="main-nav" aria-label="Main navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="events.html" aria-current="page">Events</a></li>
+            <li><a href="event-details.html">Event Details</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="registration.html">Register</a></li>
+          </ul>
+        </nav>
+        <label class="toggle-label" for="theme-toggle">Dark mode</label>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <h1>Event catalogue</h1>
+        <section aria-labelledby="up-heading">
+          <h2 id="up-heading">Upcoming events</h2>
+          <div class="card-grid">
+            <article class="event-card">
+              <img src="assets/tech-fest.svg" alt="Tech Innovation Fest 2026 poster with a teal background" width="400"
+                height="300">
+              <div class="card-body">
+                <span class="tag">Featured</span>
+                <h3>Tech Innovation Fest 2026</h3>
+                <ul class="event-meta">
+                  <li><strong>Date:</strong> 15 November 2026</li>
+                  <li><strong>Venue:</strong> Main Hall, Building A</li>
+                  <li><strong>Category:</strong> Technology</li>
+                </ul>
+                <a class="btn" href="event-details.html">View details</a>
+              </div>
+            </article>
+            <article class="event-card" id="cultural-night">
+              <img src="assets/culture-night.svg" alt="Cultural Night poster with a purple background" width="400"
+                height="300">
+              <div class="card-body">
+                <span class="tag">Upcoming</span>
+                <h3>Cultural Night</h3>
+                <ul class="event-meta">
+                  <li><strong>Date:</strong> 20 November 2026</li>
+                  <li><strong>Venue:</strong> Open Theatre</li>
+                  <li><strong>Category:</strong> Culture</li>
+                </ul>
+                <a class="btn" href="events.html#cultural-night">View details</a>
+              </div>
+            </article>
+            <article class="event-card" id="career-fair">
+              <img src="assets/career-fair.svg" alt="Career Fair poster with a navy background" width="400"
+                height="300">
+              <div class="card-body">
+                <span class="tag">Upcoming</span>
+                <h3>Career Fair 2026</h3>
+                <ul class="event-meta">
+                  <li><strong>Date:</strong> 2 December 2026</li>
+                  <li><strong>Venue:</strong> Sports Hall</li>
+                  <li><strong>Category:</strong> Careers</li>
+                </ul>
+                <a class="btn" href="events.html#career-fair">View details</a>
+              </div>
+            </article>
+          </div>
+        </section>
+        <section aria-labelledby="past-heading">
+          <h2 id="past-heading">Past events</h2>
+          <div class="card-grid">
+            <article class="event-card">
+              <img src="assets/orientation.svg" alt="Orientation Day poster with a green background" width="400"
+                height="300">
+              <div class="card-body">
+                <span class="tag past">Past</span>
+                <h3>Orientation Day</h3>
+                <ul class="event-meta">
+                  <li><strong>Date:</strong> 5 October 2026</li>
+                  <li><strong>Venue:</strong> Main Hall, Building A</li>
+                  <li><strong>Category:</strong> Student life</li>
+                </ul>
+                <a class="btn" href="events.html#past-heading">Event ended</a>
+              </div>
+            </article>
+            <article class="event-card">
+              <img src="assets/sports-day.svg" alt="Sports Day poster with a brown background" width="400" height="300">
+              <div class="card-body">
+                <span class="tag past">Past</span>
+                <h3>Sports Day</h3>
+                <ul class="event-meta">
+                  <li><strong>Date:</strong> 12 September 2026</li>
+                  <li><strong>Venue:</strong> Sports Hall</li>
+                  <li><strong>Category:</strong> Sports</li>
+                </ul>
+                <a class="btn" href="events.html#past-heading">Event ended</a>
+              </div>
+            </article>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-bar">
+        <p>&copy; 2026 Campus Events Guide. University of Science and Technology.</p>
+        <ul class="social-links" aria-label="Social links">
+          <li><a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a></li>
+          <li><a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://github.com/yourusername/campus_events_yourname" target="_blank" rel="noopener">GitHub
+              repo</a></li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>

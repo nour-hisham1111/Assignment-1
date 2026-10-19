@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tech Innovation Fest 2026 | Campus Events Guide</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <input type="checkbox" id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+  <div class="page">
+    <header class="site-header">
+      <div class="container header-bar">
+        <a class="brand" href="index.html">Campus Events Guide</a>
+        <nav class="main-nav" aria-label="Main navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="event-details.html" aria-current="page">Event Details</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="registration.html">Register</a></li>
+          </ul>
+        </nav>
+        <label class="toggle-label" for="theme-toggle">Dark mode</label>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <h1>Tech Innovation Fest 2026</h1>
+        <div class="detail-layout">
+          <article>
+            <img src="assets/tech-fest.svg" alt="Tech Innovation Fest 2026 poster with the date 15 November 2026"
+              width="400" height="300">
+            <h2>About the event</h2>
+            <p>A full day of student projects, short talks, and hands-on workshops on robotics, web development, and
+              artificial intelligence. Meet student teams and industry guests, and try the demos yourself.</p>
+            <ul class="event-meta">
+              <li><strong>Date:</strong> 15 November 2026</li>
+              <li><strong>Time:</strong> 10:00 AM - 4:00 PM</li>
+              <li><strong>Venue:</strong> Main Hall, Building A</li>
+              <li><strong>Entry:</strong> Free for students. Bring your student ID card. Guests pay 50 EGP.</li>
+            </ul>
+            <a class="btn" href="registration.html">Register for this event</a>
+          </article>
+          <aside>
+            <section class="panel" aria-labelledby="agenda-heading">
+              <h2 id="agenda-heading">Agenda</h2>
+              <ul class="agenda">
+                <li><strong>10:00</strong> Opening and welcome</li>
+                <li><strong>10:30</strong> Keynote: building useful interfaces</li>
+                <li><strong>12:00</strong> Robotics workshop</li>
+                <li><strong>13:30</strong> Lunch and project demos</li>
+                <li><strong>15:00</strong> Student showcase and awards</li>
+                <li><strong>16:00</strong> Closing</li>
+              </ul>
+            </section>
+            <section class="panel" aria-labelledby="media-heading">
+              <h2 id="media-heading">Event jingle</h2>
+              <audio controls preload="none" src="assets/event-promo.wav">Your browser does not support audio
+                playback.</audio>
+            </section>
+          </aside>
+        </div>
+        <section aria-labelledby="review-heading">
+          <h2 id="review-heading">Review a past edition</h2>
+          <form action="#" method="post" enctype="multipart/form-data">
+            <div class="form-grid">
+              <div class="field">
+                <label for="rev-name">Your name</label>
+                <input type="text" id="rev-name" name="reviewer" required maxlength="40" placeholder="Sara Ahmed">
+              </div>
+              <div class="field">
+                <label for="rev-email">Email</label>
+                <input type="email" id="rev-email" name="email" required placeholder="you@example.com">
+              </div>
+              <div class="field">
+                <label for="rev-rating">Rating</label>
+                <select id="rev-rating" name="rating" required>
+                  <option value="">Choose a rating</option>
+                  <option>5 - Excellent</option>
+                  <option>4 - Good</option>
+                  <option>3 - Fair</option>
+                  <option>2 - Poor</option>
+                  <option>1 - Very poor</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="rev-photo">Photo from the event</label>
+                <input type="file" id="rev-photo" name="photo" accept="image/*">
+              </div>
+              <div class="field wide">
+                <label for="rev-text">Your review</label>
+                <textarea id="rev-text" name="review" rows="4" required maxlength="500"
+                  placeholder="What did you enjoy most?"></textarea>
+                <span class="hint">Maximum 500 characters.</span>
+              </div>
+            </div>
+            <button class="btn" type="submit">Send review</button>
+          </form>
+        </section>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-bar">
+        <p>&copy; 2026 Campus Events Guide. University of Science and Technology.</p>
+        <ul class="social-links" aria-label="Social links">
+          <li><a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a></li>
+          <li><a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://github.com/yourusername/campus_events_yourname" target="_blank" rel="noopener">GitHub
+              repo</a></li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>

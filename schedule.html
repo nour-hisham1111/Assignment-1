@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Schedule | Campus Events Guide</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <input type="checkbox" id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+  <div class="page">
+    <header class="site-header">
+      <div class="container header-bar">
+        <a class="brand" href="index.html">Campus Events Guide</a>
+        <nav class="main-nav" aria-label="Main navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="event-details.html">Event Details</a></li>
+            <li><a href="schedule.html" aria-current="page">Schedule</a></li>
+            <li><a href="registration.html">Register</a></li>
+          </ul>
+        </nav>
+        <label class="toggle-label" for="theme-toggle">Dark mode</label>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <h1>Campus event timetable</h1>
+        <p>Upcoming events in date order. The featured event is shown in bold; open its <a
+            href="event-details.html">details page</a> or <a href="registration.html">register now</a>.</p>
+        <section aria-labelledby="table-heading">
+          <h2 id="table-heading">Upcoming events</h2>
+          <div class="table-wrap">
+            <table>
+              <caption>Upcoming campus events, autumn 2026</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Event</th>
+                  <th scope="col">Date</th>
+                  <th scope="col">Time</th>
+                  <th scope="col">Venue</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="featured">
+                  <th scope="row">Tech Innovation Fest 2026</th>
+                  <td>15 November 2026</td>
+                  <td>10:00 AM - 4:00 PM</td>
+                  <td>Main Hall, Building A</td>
+                </tr>
+                <tr>
+                  <th scope="row">Cultural Night</th>
+                  <td>20 November 2026</td>
+                  <td>6:00 PM - 9:00 PM</td>
+                  <td>Open Theatre</td>
+                </tr>
+                <tr>
+                  <th scope="row">Career Fair 2026</th>
+                  <td>2 December 2026</td>
+                  <td>11:00 AM - 3:00 PM</td>
+                  <td>Sports Hall</td>
+                </tr>
+                <tr>
+                  <th scope="row">Winter Hackathon</th>
+                  <td>12 December 2026</td>
+                  <td>9:00 AM - 9:00 PM</td>
+                  <td>Computer Lab 3</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-bar">
+        <p>&copy; 2026 Campus Events Guide. University of Science and Technology.</p>
+        <ul class="social-links" aria-label="Social links">
+          <li><a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a></li>
+          <li><a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://github.com/yourusername/campus_events_yourname" target="_blank" rel="noopener">GitHub
+              repo</a></li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>
